@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nova+Round&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(art.avif)no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+section{ 
+   
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-position: center;
+    
+}
+header{
+    position: relative;
+    top:0;
+    width:100%;
+    padding:30px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    position: relative;
+    color:white;
+    text-decoration: none;
+    font-size:30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(249, 241, 241);
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding:2px 20px;
+    transition: 0.3s;
+    margin-left: 20px;
+    
+}
+.nav a:not(:last-child){
+    margin-right: 40px;
+}
+.nav a:hover{
+    background: black;
+    color: white;
+   
+}
+.content{
+    max-width: 650px;
+    margin:60px 100px;
+    color: white;
+}
+.info h2{
+    color:rgba(163, 226, 99, 0.866);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.info h2 span{
+    color:white;
+    font-size:43px;
+    font-weight:600;
+}
+.info p{
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:30px;
+    margin-top: 0px;
+}
+.info-btn{
+    text-decoration: none;
+    color: whitesmoke;
+    background:rgba(163, 226, 99, 0.866);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:700;
+    padding:10px 20px;
+    border-radius: 20px;
+    transition: 0.5;
+
+}
+.info-btn:hover{
+  background: rgb(131, 157, 91);
+}
+.media-icons .b img{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  margin: auto;
+  display: inline-block;
+  height:70px;
+  width:70px;
+  left:40em;
+}
+.media-icons .c img{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  margin: auto;
+  display: inline-block;
+  height:40px;
+  width:40px;
+  left:40em;
+  margin-bottom: 16px;
+  margin-left: 40px;
+}
+.media-icons .d img{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  margin: auto;
+  display: inline-block;
+  height:40px;
+  width:40px;
+  left:40em;
+  margin-bottom: 16px;
+  margin-left: 40px;
+}
+
+.media-icons a:not(:nth-child){
+ margin-right: 60px;
+}
+.art img{
+    height:450px;
+    width:450px;
+   float: right;
+   position: absolute;
+   left:65%;
+   bottom: 18%;
+
+}
+label{
+    display: none;
+}
+#check{
+    z-index: 3;
+}
+/* responsive webdesign */
+@media(max-width:1020px){
+    .nav a{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    label:hover{
+        color: white;
+    }
+   .hii2{
+        display: none;
+    }
+    #check:checked ~ header .nav {
+       z-index: 2;
+        position: fixed;
+        background: rgba(105, 115, 118, 0.9);
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        display:flex;
+    }
+}
